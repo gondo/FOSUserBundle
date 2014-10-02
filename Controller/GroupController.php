@@ -36,7 +36,9 @@ class GroupController extends Controller
     {
         $groups = $this->get('fos_user.group_manager')->findGroups();
 
-        return $this->render('FOSUserBundle:Group:list.html.twig', array('groups' => $groups));
+        return $this->render('FOSUserBundle:Group:list.html.twig', array(
+            'groups' => $groups
+        ));
     }
 
     /**
@@ -46,7 +48,9 @@ class GroupController extends Controller
     {
         $group = $this->findGroupBy('name', $groupName);
 
-        return $this->render('FOSUserBundle:Group:show.html.twig', array('group' => $group));
+        return $this->render('FOSUserBundle:Group:show.html.twig', array(
+            'group' => $group
+        ));
     }
 
     /**
