@@ -91,7 +91,7 @@ class FOSUserExtension extends Extension
         }
 
         $this->remapParametersNamespaces($config, $container, array(
-            ''          => array(
+            '' => array(
                 'db_driver' => 'fos_user.storage',
                 'firewall_name' => 'fos_user.firewall_name',
                 'model_manager_name' => 'fos_user.model_manager_name',
