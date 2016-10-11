@@ -72,7 +72,6 @@ resetting:
             S pozdravem,
             realizační tým.
 
-# Globální výrazy
 layout:
     logout: 'Odhlásit se'
     login: 'Přihlásit se'
